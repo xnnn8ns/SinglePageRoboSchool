@@ -1,0 +1,53 @@
+$primary-color: #FFF;
+$secondary-color: #141024;
+$important-color: #D52027;
+$gray-color: #F6F6F6;
+
+// анимация появления двух линий сверху и снизу при наведении на элемент
+%animation {
+    position: relative;
+    cursor: pointer;
+            
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background: $primary-color;
+        transition: width .3s;
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    &:hover {
+        &::before {
+            width: 100%;
+            transition: width .3s;
+        }
+
+        &::after {
+            width: 100%;
+            transition: width .3s;
+        }
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin basisFont($size: 16px, $weight: 400, $line: 1.5) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+}

@@ -1,0 +1,79 @@
+@import 'nullstyle';
+@import 'sample';
+
+header {
+    background-color: $secondary-color;
+    color: $primary-color;
+
+    nav {
+        @include flex-center;
+        justify-content: space-between;
+        padding-top: 1.875rem; // 30px
+        margin-bottom: 5.3125rem; // 85px
+
+        .logo {
+            margin-left: 6.25rem; // 100px
+            @include basisFont(1.875rem, 700, 3rem); // 30px, 48px
+        }
+        .phone {
+            @extend %animation;
+            margin-right: 6.25rem; // 100px
+            @include basisFont(1.875rem, 600, 3rem); // 30px, 48px
+        }
+
+        ol {
+            @include flex-center;
+            @include basisFont(1.25rem, 400, 2rem); // 20px, 32px
+            flex: 2;
+            li {
+                margin: 0 2.5rem; // 40px
+                @extend %animation;
+            }
+        }
+    }
+
+    .blockHeader {
+        @include flex-center;
+
+        .block-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                @include basisFont(4.375rem, 600, 7rem); // 70px, 112px
+                margin-bottom: 1.25rem; // 20px
+            }
+            p {
+                @include basisFont(1.25rem, 400, 2rem); // 20px, 32px
+                max-width: 29.875rem; // 478px
+                margin-bottom: 3.125rem; // 50px
+            }
+            a {
+                @include basisFont(1.0625rem, 600, 1.8rem); // 18px, 28.8px
+                padding: 1.5625rem 3.375rem; // 25px 54px
+                border-radius: 0.3125rem; // 5px
+                max-width: 17rem; // 272px
+                background-color: $important-color;
+                border: 3px solid $important-color;
+                text-align: center;
+                transition: background-color 0.3s ease-in-out;
+                &:hover {
+                    background-color: $primary-color;
+                    color: $important-color;
+                }
+            }
+        }
+        .block-2 {
+            @include flex-center;
+            align-items: flex-end;
+            max-width: 35%;
+            margin-left: 3rem; // 48px
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+ol, li, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+header nav ol li, header nav .phone {
+  position: relative;
+  cursor: pointer;
+}
+header nav ol li::before, header nav .phone::before, header nav ol li::after, header nav .phone::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #FFF;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+header nav ol li::before, header nav .phone::before {
+  top: 0;
+  left: 0;
+}
+header nav ol li::after, header nav .phone::after {
+  bottom: 0;
+  right: 0;
+}
+header nav ol li:hover::before, header nav .phone:hover::before {
+  width: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+header nav ol li:hover::after, header nav .phone:hover::after {
+  width: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+header {
+  background-color: #141024;
+  color: #FFF;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.875rem;
+  margin-bottom: 5.3125rem;
+}
+header nav .logo {
+  margin-left: 6.25rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+header nav .phone {
+  margin-right: 6.25rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+header nav ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+header nav ol li {
+  margin: 0 2.5rem;
+}
+header .blockHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .blockHeader .block-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .blockHeader .block-1 h1 {
+  font-size: 4.375rem;
+  font-weight: 600;
+  line-height: 7rem;
+  margin-bottom: 1.25rem;
+}
+header .blockHeader .block-1 p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2rem;
+  max-width: 29.875rem;
+  margin-bottom: 3.125rem;
+}
+header .blockHeader .block-1 a {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  padding: 1.5625rem 3.375rem;
+  border-radius: 0.3125rem;
+  max-width: 17rem;
+  background-color: #D52027;
+  border: 3px solid #D52027;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+header .blockHeader .block-1 a:hover {
+  background-color: #FFF;
+  color: #D52027;
+}
+header .blockHeader .block-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 35%;
+  margin-left: 3rem;
+}
+header .blockHeader .block-2 img {
+  max-width: 100%;
+  height: auto;
+}
