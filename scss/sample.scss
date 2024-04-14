@@ -51,3 +51,27 @@ $gray-color: #F6F6F6;
     font-weight: $weight;
     line-height: $line;
 }
+
+%descriptionP {
+    @include basisFont(1.0625rem, 400, 1.8rem); // 18px, 28.8px
+    color: rgba(20, 16, 36, 0.7);
+}
+
+%descriptionH {
+    @include basisFont(1.5rem, 600, 2.4rem); // 24px, 38.4px
+    margin-bottom: 1.25rem; // 20px
+}
+
+%button {
+    padding: 1.5625rem 3.375rem; // 25px 54px
+    border-radius: 0.3125rem; // 5px
+    max-width: 17rem; // 272px
+    background-color: $important-color;
+    border: 3px solid $important-color;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+        background-color: $primary-color;
+        color: $important-color;
+    }
+}

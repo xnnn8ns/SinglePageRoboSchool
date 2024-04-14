@@ -19,11 +19,26 @@ a {
   color: #FFF;
 }
 
-header nav ol li, header nav .phone {
+input {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Jost", sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+}
+
+.profi .blockProfi .Profi a, header nav ol li, header nav .phone {
   position: relative;
   cursor: pointer;
 }
-header nav ol li::before, header nav .phone::before, header nav ol li::after, header nav .phone::after {
+.profi .blockProfi .Profi a::before, header nav ol li::before, header nav .phone::before, .profi .blockProfi .Profi a::after, header nav ol li::after, header nav .phone::after {
   content: "";
   position: absolute;
   width: 0;
@@ -32,23 +47,52 @@ header nav ol li::before, header nav .phone::before, header nav ol li::after, he
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
-header nav ol li::before, header nav .phone::before {
+.profi .blockProfi .Profi a::before, header nav ol li::before, header nav .phone::before {
   top: 0;
   left: 0;
 }
-header nav ol li::after, header nav .phone::after {
+.profi .blockProfi .Profi a::after, header nav ol li::after, header nav .phone::after {
   bottom: 0;
   right: 0;
 }
-header nav ol li:hover::before, header nav .phone:hover::before {
+.profi .blockProfi .Profi a:hover::before, header nav ol li:hover::before, header nav .phone:hover::before {
   width: 100%;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
-header nav ol li:hover::after, header nav .phone:hover::after {
+.profi .blockProfi .Profi a:hover::after, header nav ol li:hover::after, header nav .phone:hover::after {
   width: 100%;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
+}
+
+.forms .secondPart form input, .forms .secondPart form button, .price div .blockPrice p, .profi .blockProfi .Profi p, .whatAfter div .blockAfter p, .description div .blockDescription p {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: rgba(20, 16, 36, 0.7);
+}
+
+.profi .blockProfi .Profi h1, .whatAfter div .blockAfter h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin-bottom: 1.25rem;
+}
+
+header .blockHeader .block-1 a {
+  padding: 1.5625rem 3.375rem;
+  border-radius: 0.3125rem;
+  max-width: 17rem;
+  background-color: #D52027;
+  border: 3px solid #D52027;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+header .blockHeader .block-1 a:hover {
+  background-color: #FFF;
+  color: #D52027;
 }
 
 header {
@@ -139,23 +183,6 @@ header .blockHeader .block-1 p {
   max-width: 29.875rem;
   margin-bottom: 3.125rem;
 }
-header .blockHeader .block-1 a {
-  font-size: 1.0625rem;
-  font-weight: 600;
-  line-height: 1.8rem;
-  padding: 1.5625rem 3.375rem;
-  border-radius: 0.3125rem;
-  max-width: 17rem;
-  background-color: #D52027;
-  border: 3px solid #D52027;
-  text-align: center;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-header .blockHeader .block-1 a:hover {
-  background-color: #FFF;
-  color: #D52027;
-}
 header .blockHeader .block-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,11 +253,7 @@ header .blockHeader .block-2 img {
   color: #D52027;
 }
 .description div .blockDescription p {
-  font-size: 1.0625rem;
-  font-weight: 400;
-  line-height: 1.8rem;
   max-width: 16.25rem;
-  color: rgba(20, 16, 36, 0.7);
 }
 
 .whatAfter {
@@ -271,16 +294,231 @@ header .blockHeader .block-2 img {
       -ms-flex-align: normal;
           align-items: normal;
 }
-.whatAfter div .blockAfter h1 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 2.4rem;
-  margin-bottom: 1.25rem;
-}
 .whatAfter div .blockAfter p {
+  max-width: 22.525rem;
+}
+
+.profi {
+  padding: 6.25rem 0 5rem 15.625rem;
+  background-color: #FFF;
+  color: #141024;
+}
+.profi > h1 {
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 5rem;
+  margin-bottom: 3.75rem;
+}
+.profi .blockProfi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 85%;
+}
+.profi .blockProfi .Profi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+.profi .blockProfi .Profi a {
   font-size: 1.0625rem;
   font-weight: 400;
   line-height: 1.8rem;
-  max-width: 22.525rem;
-  color: rgba(20, 16, 36, 0.7);
+  max-width: 5.875rem;
+  color: #D52027;
+}
+.profi .blockProfi .Profi a::before, .profi .blockProfi .Profi a::after {
+  background-color: #D52027;
+}
+.profi .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3.75rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 85%;
+}
+.profi .control > img {
+  max-height: 31.25px;
+}
+.profi .control div img {
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.profi .control div img:hover {
+  opacity: 0.5;
+}
+
+.price {
+  padding: 5rem 0 6.25rem 15.625rem;
+  color: #141024;
+}
+.price > h1 {
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 5rem;
+  margin-bottom: 3.75rem;
+}
+.price div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 85%;
+}
+.price div .blockPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  border-radius: 1.25rem;
+  max-width: 20.625rem;
+  max-height: 31.25rem;
+  margin-left: 2.5rem;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.6s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.6s ease;
+  transition: background-color 0.3s ease, transform 0.6s ease;
+  transition: background-color 0.3s ease, transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+.price div .blockPrice:first-child {
+  margin-left: 0;
+}
+.price div .blockPrice h1 {
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 5rem;
+  margin-bottom: 1.25rem;
+}
+.price div .blockPrice h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin: 2.5rem 0 4rem 0;
+}
+.price div .blockPrice p {
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
+.price div .blockPrice a {
+  padding: 1.5625rem 3.375rem;
+  border-radius: 0.3125rem;
+  max-width: 17.5rem;
+  background-color: #D52027;
+  border: 3px solid #D52027;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.price div .blockPrice:hover {
+  background-color: #141024;
+  color: #FFF;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.price div .blockPrice:hover p {
+  color: #FFF;
+}
+
+.forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 0 6.25rem 15.625rem;
+  background-color: #D52027;
+  color: #FFF;
+}
+.forms .firstPart {
+  width: 45%;
+}
+.forms .firstPart h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 2.925rem;
+  margin-bottom: 1.25em;
+  max-width: 29.75rem;
+}
+.forms .firstPart p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  max-width: 24.75rem;
+}
+.forms .secondPart {
+  width: 55%;
+}
+.forms .secondPart form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 31.25rem;
+}
+.forms .secondPart form input, .forms .secondPart form button {
+  height: 4rem;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.625rem;
+  background-color: #FFF;
+  padding-left: 1rem;
+}
+.forms .secondPart form::-webkit-input-placeholder {
+  color: rgba(40, 41, 68, 0.7);
+}
+.forms .secondPart form::-moz-placeholder {
+  color: rgba(40, 41, 68, 0.7);
+}
+.forms .secondPart form:-ms-input-placeholder {
+  color: rgba(40, 41, 68, 0.7);
+}
+.forms .secondPart form::-ms-input-placeholder {
+  color: rgba(40, 41, 68, 0.7);
+}
+.forms .secondPart form::placeholder {
+  color: rgba(40, 41, 68, 0.7);
+}
+.forms .secondPart form button {
+  padding-left: 0;
+  background-color: #141024;
+  color: #FFF;
+  font-size: 1.25rem;
 }

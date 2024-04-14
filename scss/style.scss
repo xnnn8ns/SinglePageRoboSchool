@@ -49,20 +49,7 @@ header {
                 max-width: 29.875rem; // 478px
                 margin-bottom: 3.125rem; // 50px
             }
-            a {
-                @include basisFont(1.0625rem, 600, 1.8rem); // 18px, 28.8px
-                padding: 1.5625rem 3.375rem; // 25px 54px
-                border-radius: 0.3125rem; // 5px
-                max-width: 17rem; // 272px
-                background-color: $important-color;
-                border: 3px solid $important-color;
-                text-align: center;
-                transition: background-color 0.3s ease-in-out;
-                &:hover {
-                    background-color: $primary-color;
-                    color: $important-color;
-                }
-            }
+            a {@extend %button;}
         }
         .block-2 {
             @include flex-center;
@@ -103,9 +90,8 @@ header {
                 color: $important-color;
             }
             p {
-                @include basisFont(1.0625rem, 400, 1.8rem); // 18px, 28.8px
+                @extend %descriptionP;
                 max-width: 16.25rem; // 260px
-                color: rgba(20, 16, 36, 0.7);
             }
         }
     }
@@ -128,14 +114,158 @@ header {
             flex-direction: column;
             align-items: normal;
 
+            h1 {@extend %descriptionH;}
+            p {
+                @extend %descriptionP;
+                max-width: 22.525rem; // 360px
+            }
+        }
+    }
+}
+
+.profi {
+    padding: 6.25rem 0 5rem 15.625rem; // 100px 0 80px 250px
+    background-color: $primary-color;
+    color: $secondary-color;
+    >h1 {
+        @include basisFont(3.125rem, 600, 5rem); // 50px, 80px
+        margin-bottom: 3.75rem; // 60px
+    }
+    .blockProfi {
+        @include flex-center;
+        justify-content: space-between;
+        max-width: 85%;
+        .Profi {
+            display: flex;
+            flex-direction: column;
+            align-items: normal;
+
+            h1 {@extend %descriptionH;}
+            p {@extend %descriptionP;}
+            a {
+                @include basisFont(1.0625rem, 400, 1.8rem); // 18px, 28.8px
+                @extend %animation;
+                max-width: 5.875rem; // 94px
+                color: $important-color;
+                &::before, &::after {background-color: $important-color;}
+            }
+        }
+    }
+    .control {
+        @include flex-center;
+        padding-top: 3.75rem; // 60px
+        justify-content: space-between;
+        max-width: 85%;
+        >img {max-height: 31.25px;} // 500px
+        div {
+            img {transition: opacity 0.3s ease;
+                &:hover {opacity: 0.5;}
+            }
+        }
+    }
+}
+
+.price {
+    padding: 5rem 0 6.25rem 15.625rem; // 80px 0 100px 250px
+    color: $secondary-color;
+    >h1 {
+        @include basisFont(3.125rem, 600, 5rem); // 50px, 80px
+        margin-bottom: 3.75rem; // 60px
+    }
+    div {
+        display: flex;
+        max-width: 85%;
+        .blockPrice {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #14102433;
+            border-radius: 1.25rem; // 20px
+            max-width: 20.625rem; // 330px
+            max-height: 31.25rem; // 500px
+            margin-left: 2.5rem;
+            transition: background-color 0.3s ease, transform 0.6s ease;
+
+            &:first-child {margin-left: 0;}
+            
             h1 {
-                @include basisFont(1.5rem, 600, 2.4rem); // 24px, 38.4px
+                @include basisFont(3.125rem, 600, 5rem); // 50px, 80px
                 margin-bottom: 1.25rem; // 20px
+            } 
+            h2 {
+                @include basisFont(1.875rem, 600, 3rem); // 30px, 48px
+                margin: 2.5rem 0 4rem 0; // 40px 64px
             }
             p {
-                @include basisFont(1.0625rem, 400, 1.8rem); // 18px, 28.8px
-                max-width: 22.525rem; // 360px
-                color: rgba(20, 16, 36, 0.7);
+                @extend %descriptionP;
+                margin-bottom: 3.75rem; // 60px
+                text-align: center;
+            }
+            a {
+                padding: 1.5625rem 3.375rem; // 25px 54px
+                border-radius: 0.3125rem; // 5px
+                max-width: 17.5rem; // 280px
+                background-color: $important-color;
+                border: 3px solid $important-color;
+                text-align: center;
+                margin-bottom: 1.25rem; // 20px
+            }
+
+            &:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+                transform: scale(1.1);
+                p {color: $primary-color;}
+            }
+        }
+    }
+}
+
+.forms {
+    @include flex-center;
+    padding: 5rem 0 6.25rem 15.625rem; // 80px 0 100px 250px
+    background-color: $important-color;
+    color: $primary-color;
+
+    .firstPart {
+        width: 45%;
+        h1 {
+            @include basisFont(2.25rem, 600, 2.925rem); // 36px, 46.8px
+            margin-bottom: 1.25em; // 20px
+            max-width: 29.75rem; // 476px
+        }
+        p {
+            @include basisFont(1.25rem, 400, 1.625rem); // 20px, 26px
+            max-width: 24.75rem; // 396px
+        }
+    }
+
+    .secondPart {
+        width: 55%;
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 31.25rem; // 500px
+
+            input, button {
+                @extend %descriptionP;
+                height: 4rem; // 64px
+                border-radius: 0.3125rem; // 5px
+                margin-bottom: 0.625rem; // 10px
+                background-color: $primary-color;
+                padding-left: 1rem;
+            }
+
+            &::placeholder {
+                color: rgba(40, 41, 68, 0.7)
+            }
+
+            button {
+                padding-left: 0;
+                background-color: $secondary-color;
+                color: $primary-color;
+                font-size: 1.25rem; // 20px
             }
         }
     }
