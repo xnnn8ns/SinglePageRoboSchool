@@ -270,3 +270,32 @@ header {
         }
     }
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 9.9375rem; // 159px
+    background-color: $secondary-color;
+    color: $primary-color;
+
+    .LogoFooter {
+        margin: 2.5rem 0 0 6.25rem; // 40px 100px
+        h1 {
+            @include basisFont(1.875rem, 700, 3rem); // 30px, 48px
+        }
+        p {
+            @include basisFont(1rem, 400, 1.6rem); // 16px, 25.6px
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .telephone {
+        margin: 2.5rem 6.25rem 0 0 ; // 40px 100px
+        @include basisFont(1.875rem, 600, 3rem); // 30px, 48px
+        
+        a {transition: color 0.3s ease;}
+        a:hover {
+            color: $important-color;
+        }
+    }
+}

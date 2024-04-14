@@ -522,3 +522,42 @@ header .blockHeader .block-2 img {
   color: #FFF;
   font-size: 1.25rem;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 9.9375rem;
+  background-color: #141024;
+  color: #FFF;
+}
+footer .LogoFooter {
+  margin: 2.5rem 0 0 6.25rem;
+}
+footer .LogoFooter h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+footer .LogoFooter p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .telephone {
+  margin: 2.5rem 6.25rem 0 0;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+footer .telephone a {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+footer .telephone a:hover {
+  color: #D52027;
+}
