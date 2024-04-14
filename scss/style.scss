@@ -77,3 +77,66 @@ header {
     }
 }
 
+.description {
+    padding: 6.25rem 0 6.25rem 15.625rem; // 100px 0 100px 250px
+    color: $secondary-color;
+    >h1 {
+        @include basisFont(1.875rem, 400, 3rem); // 30px, 48px
+        margin-bottom: 3.75rem; // 60px
+        max-width: 55.6875rem; // 891px
+        span {
+            font-weight: 600;
+        }
+    }
+    div {
+        @include flex-center;
+        justify-content: space-between;
+        max-width: 85%;
+        .blockDescription {
+            display: flex;
+            flex-direction: column;
+            align-items: normal;
+
+            h1 {
+                @include basisFont(4.375rem, 600, 7rem); // 70px, 112px
+                max-width: 14.75rem; // 236px
+                color: $important-color;
+            }
+            p {
+                @include basisFont(1.0625rem, 400, 1.8rem); // 18px, 28.8px
+                max-width: 16.25rem; // 260px
+                color: rgba(20, 16, 36, 0.7);
+            }
+        }
+    }
+}
+
+.whatAfter {
+    padding: 6.25rem 0 6.25rem 15.625rem; // 100px 0 100px 250px
+    background-color: #F9F9F9;
+    color: $secondary-color;
+    >h1 {
+        @include basisFont(3.125rem, 600, 5rem); // 50px, 80px
+        margin-bottom: 3.75rem; // 60px
+    }
+    div {
+        @include flex-center;
+        justify-content: space-between;
+        max-width: 85%;
+        .blockAfter {
+            display: flex;
+            flex-direction: column;
+            align-items: normal;
+
+            h1 {
+                @include basisFont(1.5rem, 600, 2.4rem); // 24px, 38.4px
+                margin-bottom: 1.25rem; // 20px
+            }
+            p {
+                @include basisFont(1.0625rem, 400, 1.8rem); // 18px, 28.8px
+                max-width: 22.525rem; // 360px
+                color: rgba(20, 16, 36, 0.7);
+            }
+        }
+    }
+}

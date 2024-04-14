@@ -176,3 +176,111 @@ header .blockHeader .block-2 img {
   max-width: 100%;
   height: auto;
 }
+
+.description {
+  padding: 6.25rem 0 6.25rem 15.625rem;
+  color: #141024;
+}
+.description > h1 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 3.75rem;
+  max-width: 55.6875rem;
+}
+.description > h1 span {
+  font-weight: 600;
+}
+.description div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 85%;
+}
+.description div .blockDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+.description div .blockDescription h1 {
+  font-size: 4.375rem;
+  font-weight: 600;
+  line-height: 7rem;
+  max-width: 14.75rem;
+  color: #D52027;
+}
+.description div .blockDescription p {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  max-width: 16.25rem;
+  color: rgba(20, 16, 36, 0.7);
+}
+
+.whatAfter {
+  padding: 6.25rem 0 6.25rem 15.625rem;
+  background-color: #F9F9F9;
+  color: #141024;
+}
+.whatAfter > h1 {
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 5rem;
+  margin-bottom: 3.75rem;
+}
+.whatAfter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 85%;
+}
+.whatAfter div .blockAfter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+.whatAfter div .blockAfter h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin-bottom: 1.25rem;
+}
+.whatAfter div .blockAfter p {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  max-width: 22.525rem;
+  color: rgba(20, 16, 36, 0.7);
+}
