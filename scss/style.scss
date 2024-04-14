@@ -65,7 +65,7 @@ header {
 }
 
 .description {
-    padding: 6.25rem 0 6.25rem 15.625rem; // 100px 0 100px 250px
+    @extend %padding;
     color: $secondary-color;
     >h1 {
         @include basisFont(1.875rem, 400, 3rem); // 30px, 48px
@@ -98,7 +98,7 @@ header {
 }
 
 .whatAfter {
-    padding: 6.25rem 0 6.25rem 15.625rem; // 100px 0 100px 250px
+    @extend %padding;
     background-color: #F9F9F9;
     color: $secondary-color;
     >h1 {
@@ -124,7 +124,7 @@ header {
 }
 
 .profi {
-    padding: 6.25rem 0 5rem 15.625rem; // 100px 0 80px 250px
+    @extend %padding;
     background-color: $primary-color;
     color: $secondary-color;
     >h1 {
@@ -166,7 +166,7 @@ header {
 }
 
 .price {
-    padding: 5rem 0 6.25rem 15.625rem; // 80px 0 100px 250px
+    @extend %padding;
     color: $secondary-color;
     >h1 {
         @include basisFont(3.125rem, 600, 5rem); // 50px, 80px
@@ -224,7 +224,7 @@ header {
 
 .forms {
     @include flex-center;
-    padding: 5rem 0 6.25rem 15.625rem; // 80px 0 100px 250px
+    @extend %padding;
     background-color: $important-color;
     color: $primary-color;
 
@@ -299,3 +299,5 @@ footer {
         }
     }
 }
+
+@import "adaptive";

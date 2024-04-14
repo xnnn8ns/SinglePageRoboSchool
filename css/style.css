@@ -95,6 +95,10 @@ header .blockHeader .block-1 a:hover {
   color: #D52027;
 }
 
+.forms, .price, .profi, .whatAfter, .description {
+  padding: 6.25rem 0 6.25rem 15.625rem;
+}
+
 header {
   background-color: #141024;
   color: #FFF;
@@ -205,7 +209,6 @@ header .blockHeader .block-2 img {
 }
 
 .description {
-  padding: 6.25rem 0 6.25rem 15.625rem;
   color: #141024;
 }
 .description > h1 {
@@ -257,7 +260,6 @@ header .blockHeader .block-2 img {
 }
 
 .whatAfter {
-  padding: 6.25rem 0 6.25rem 15.625rem;
   background-color: #F9F9F9;
   color: #141024;
 }
@@ -299,7 +301,6 @@ header .blockHeader .block-2 img {
 }
 
 .profi {
-  padding: 6.25rem 0 5rem 15.625rem;
   background-color: #FFF;
   color: #141024;
 }
@@ -374,7 +375,6 @@ header .blockHeader .block-2 img {
 }
 
 .price {
-  padding: 5rem 0 6.25rem 15.625rem;
   color: #141024;
 }
 .price > h1 {
@@ -461,7 +461,6 @@ header .blockHeader .block-2 img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5rem 0 6.25rem 15.625rem;
   background-color: #D52027;
   color: #FFF;
 }
@@ -560,4 +559,310 @@ footer .telephone a {
 }
 footer .telephone a:hover {
   color: #D52027;
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+  .description, .whatAfter, .profi, .price, .forms {
+    padding: 6.25rem 0 6.25rem 1.25rem;
+  }
+  header .blockHeader {
+    display: block;
+  }
+  header nav ol {
+    display: none;
+  }
+  header .blockHeader .block-1 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .blockHeader .block-2 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 80%;
+  }
+  header .blockHeader .block-1 h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  header .blockHeader .block-1 p {
+    text-align: center;
+    max-width: 95%;
+  }
+  .description div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .description div .blockDescription {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .description div .blockDescription p {
+    max-width: auto;
+    font-size: 1.5rem;
+  }
+  .whatAfter div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .whatAfter div .blockAfter {
+    max-width: 90%;
+  }
+  .whatAfter div .blockAfter p {
+    font-size: 1.5rem;
+    max-width: 40rem;
+  }
+  .profi .blockProfi .Profi {
+    max-width: 11rem;
+  }
+  .profi > h1 {
+    font-size: 2.5rem;
+  }
+  footer .LogoFooter {
+    margin-left: 0;
+  }
+  footer .telephone {
+    margin-right: 0;
+  }
+  header nav .logo {
+    margin-left: 1.25rem;
+  }
+  header nav .phone {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+  .description div, .whatAfter div, .profi .blockProfi, .price div {
+    max-width: 95%;
+  }
+  .profi .control {
+    max-width: 90%;
+  }
+  .profi .blockProfi .Profi img {
+    width: 80%;
+  }
+  .price div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .price div .blockPrice {
+    margin: 0;
+  }
+  .forms .firstPart h1 {
+    font-size: 2rem;
+  }
+  footer .telephone {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .description, .whatAfter, .profi, .price, .forms {
+    padding: 6.25rem 0 6.25rem 3.75rem;
+  }
+  header .blockHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .blockHeader .block-1 {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  header .blockHeader .block-2 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    max-width: 35%;
+  }
+  header .blockHeader .block-1 h1 {
+    text-align: left;
+    font-size: 4.375rem;
+  }
+  header .blockHeader .block-1 p {
+    text-align: left;
+    max-width: 29.875rem;
+  }
+  .description div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .description div .blockDescription {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .description div .blockDescription p {
+    max-width: 16.25rem;
+  }
+  .whatAfter div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 1rem;
+  }
+  .whatAfter div .blockAfter {
+    max-width: 85%;
+  }
+  .whatAfter div .blockAfter p {
+    font-size: 1.35rem;
+    max-width: 22.525rem;
+  }
+  .profi .blockProfi .Profi {
+    max-width: 100%;
+  }
+  .profi > h1 {
+    font-size: 3.125rem;
+  }
+  footer .LogoFooter {
+    margin-left: 6.25rem;
+  }
+  footer .telephone {
+    margin-right: 6.25rem;
+  }
+  header nav .logo {
+    margin-left: 3.75rem;
+  }
+  header nav .phone {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+  }
+  .description div, .whatAfter div, .profi .blockProfi, .price div {
+    max-width: 95%;
+  }
+  .profi .control {
+    max-width: 90%;
+  }
+  .description div .blockDescription p {
+    max-width: 12rem;
+  }
+  .profi .blockProfi .Profi img {
+    width: 90%;
+  }
+  .price div .blockPrice {
+    margin-left: 2.5rem;
+  }
+  .price div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
+  .forms .secondPart {
+    width: 50%;
+    margin-left: 2rem;
+  }
+  .forms .firstPart h1 {
+    font-size: 2.5rem;
+  }
+  footer .telephone {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .description, .whatAfter, .profi, .price, .forms {
+    padding: 6.25rem 0 6.25rem 6.8rem;
+  }
+  header nav .logo {
+    margin-left: 6.75rem;
+  }
+  header nav .phone {
+    margin-right: 3.75rem;
+    font-size: 1.875rem;
+  }
+  .description div, .whatAfter div, .profi .blockProfi {
+    max-width: 95%;
+  }
+  .profi .control {
+    max-width: 94%;
+  }
+  .profi .blockProfi .Profi, .whatAfter div .blockAfter, .description div .blockDescription {
+    width: 30%;
+    height: 0%;
+  }
+  .profi .blockProfi .Profi img {
+    width: 100%;
+  }
+  .price div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 3rem;
+  }
+  .description div .blockDescription p {
+    max-width: 14rem;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+  .description, .whatAfter, .profi, .price, .forms {
+    padding: 6.25rem 0 6.25rem 6.8rem;
+  }
+  .description div, .whatAfter div, .profi .blockProfi, .price div {
+    max-width: 95%;
+  }
+  .profi .control {
+    max-width: 94%;
+  }
+  .profi .blockProfi .Profi, .whatAfter div .blockAfter, .description div .blockDescription {
+    width: 30%;
+    height: 0%;
+  }
+  .description div .blockDescription p {
+    max-width: 16rem;
+  }
+  .price div {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 16px;
+  }
+  .description, .whatAfter, .profi, .price, .forms {
+    padding: 6.25rem 0 6.25rem 11rem;
+  }
+  .description div, .whatAfter div, .profi .control, .price div {
+    max-width: 95%;
+  }
 }

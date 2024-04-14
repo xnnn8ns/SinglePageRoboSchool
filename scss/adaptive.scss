@@ -1,0 +1,232 @@
+@media (min-width: 320px) {
+    html {
+        font-size: 12px;
+    }
+    %padding {
+        padding: 6.25rem 0 6.25rem 1.25rem;
+    }
+
+    // изменения отсюда
+    header .blockHeader {display: block;}
+    header nav ol {display: none}
+    header .blockHeader .block-1 {align-items: center;}
+    header .blockHeader .block-2 {align-items: center; max-width: 80%;}
+    header .blockHeader .block-1 h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    header .blockHeader .block-1 p {
+        text-align: center;
+        max-width: 95%;
+    }
+
+    .description div {flex-direction: column;}
+    .description div .blockDescription {
+        justify-content: center;
+        align-items: center;
+    }
+    .description div .blockDescription p {
+        max-width: auto;
+        font-size: 1.5rem;
+    }
+
+    .whatAfter div {flex-direction: column;}
+    .whatAfter div .blockAfter {max-width: 90%;}
+    .whatAfter div .blockAfter p {font-size: 1.5rem; max-width: 40rem;}
+
+    .profi .blockProfi .Profi {max-width: 11rem;}
+    .profi > h1 {
+        font-size: 2.5rem;
+    }
+    
+    footer .LogoFooter {margin-left: 0;}
+    footer .telephone {margin-right: 0;}
+
+    //конец здесь
+
+    header nav .logo {
+        margin-left: 1.25rem;
+    }
+
+    header nav .phone {
+        margin-right: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .description div, .whatAfter div, .profi .blockProfi, .price div {max-width: 95%;}
+    .profi .control {max-width: 90%;}
+
+    .profi .blockProfi .Profi img {width: 80%;}
+
+    .price div {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .price div .blockPrice {margin: 0;}
+
+    .forms .firstPart h1 {
+        font-size: 2rem;
+    }
+
+    footer .telephone {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    
+    %padding {
+        padding: 6.25rem 0 6.25rem 3.75rem;
+    }
+
+    header .blockHeader {display: flex;}
+    header nav ol {display: flex}
+    header .blockHeader .block-1 {align-items: stretch;}
+    header .blockHeader .block-2 {align-items: flex-end; max-width: 35%;}
+    header .blockHeader .block-1 h1 {
+        text-align: left;
+        font-size: 4.375rem;
+    }
+
+    header .blockHeader .block-1 p {
+        text-align: left;
+        max-width: 29.875rem;
+    }
+
+    .description div {flex-direction: row;}
+    .description div .blockDescription {
+        justify-content: center;
+        align-items:flex-start;
+    }
+    .description div .blockDescription p {max-width: 16.25rem;}
+
+    .whatAfter div {
+        flex-direction: row;
+        margin-right: 1rem;
+    }
+    .whatAfter div .blockAfter {max-width: 85%;}
+    .whatAfter div .blockAfter p {font-size: 1.35rem; max-width: 22.525rem;}
+
+    .profi .blockProfi .Profi {max-width: 100%;}
+    .profi > h1 {
+        font-size: 3.125rem;
+    }
+    
+    footer .LogoFooter {margin-left: 6.25rem;}
+    footer .telephone {margin-right: 6.25rem;}
+
+    header nav .logo {
+        margin-left: 3.75rem;
+    }
+
+    header nav .phone {
+        margin-right: 1rem;
+        font-size: 1.25rem; 
+    }
+    
+    .description div, .whatAfter div, .profi .blockProfi, .price div {max-width: 95%;}
+    .profi .control {max-width: 90%;}
+
+    .description div .blockDescription p {
+        max-width: 12rem;
+    }
+    
+    .profi .blockProfi .Profi img {width: 90%;}
+
+    .price div .blockPrice {margin-left: 2.5rem;}
+    .price div {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .forms .secondPart {
+        width: 50%;
+        margin-left: 2rem;
+    }
+
+    .forms .firstPart h1 {
+        font-size: 2.5rem;
+    }
+
+    footer .telephone {
+        font-size: 1.875rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
+    %padding {
+        padding: 6.25rem 0 6.25rem 6.8rem;
+    }
+
+    header nav .logo {
+        margin-left: 6.75rem;
+    }
+
+    header nav .phone {
+        margin-right: 3.75rem;
+        font-size: 1.875rem;
+    }
+    
+    .description div, .whatAfter div, .profi .blockProfi {max-width: 95%;}
+    .profi .control {max-width: 94%;}
+
+    .profi .blockProfi .Profi, .whatAfter div .blockAfter, .description div .blockDescription {
+        width: 30%;
+        height: 0%;
+    }
+
+    .profi .blockProfi .Profi img {width: 100%;}
+
+    .price div {
+        display: flex;
+        margin-right: 3rem;
+    }
+
+    .description div .blockDescription p {
+        max-width: 14rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+    %padding {
+        padding: 6.25rem 0 6.25rem 6.8rem;
+    }
+    
+    .description div, .whatAfter div, .profi .blockProfi, .price div {max-width: 95%;}
+    .profi .control {max-width: 94%;}
+
+    .profi .blockProfi .Profi, .whatAfter div .blockAfter, .description div .blockDescription {
+        width: 30%;
+        height: 0%;
+    }
+
+    .description div .blockDescription p {
+        max-width: 16rem;
+    }
+
+    .price div {margin-right: 0;}
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 16px;
+    }
+    %padding {
+        padding: 6.25rem 0 6.25rem 11rem;
+    }
+    
+    .description div, .whatAfter div, .profi .control, .price div {max-width: 95%;}
+}

@@ -75,3 +75,7 @@ $gray-color: #F6F6F6;
         color: $important-color;
     }
 }
+
+%padding {
+    padding: 6.25rem 0 6.25rem 15.625rem; // 100px 0 100px 250px
+}
